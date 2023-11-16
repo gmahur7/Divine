@@ -33517,7 +33517,6 @@ const Signup = ()=>{
                     }, 4000);
                     setMsg(true);
                 }
-                console.log(await result);
             } else setMobErr(true);
         }
     }
@@ -38808,10 +38807,25 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _jwtDecode = require("jwt-decode");
 var _s = $RefreshSig$();
 function Admin() {
     _s();
     const navigate = (0, _reactRouterDom.useNavigate)();
+    if (isTokenExpired()) {
+        // Clear the token from local storage
+        localStorage.removeItem("token");
+        localStorage.removeItem("admin");
+        // Redirect to the login page
+        window.location.href = "/adminlogin"; // You might use React Router's history.push() for navigation
+    }
+    function isTokenExpired() {
+        const token = localStorage.getItem("token");
+        if (!token) return true; // Token not found
+        const decoded = (0, _jwtDecode.jwtDecode)(token); // Function to decode the token
+        const currentTime = Date.now() / 1000; // Get current time in seconds
+        return decoded.exp < currentTime; // Check if token expiration time is in the past
+    }
     const [data, setData] = (0, _react.useState)("");
     const [type, setType] = (0, _react.useState)("Name");
     const [value, setValue] = (0, _react.useState)("");
@@ -38944,7 +38958,7 @@ function Admin() {
                         placeholder: `Search By ${type}`
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 119,
+                        lineNumber: 136,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -38955,7 +38969,7 @@ function Admin() {
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 121,
+                                lineNumber: 138,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -38963,7 +38977,7 @@ function Admin() {
                                 children: "Course"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 122,
+                                lineNumber: 139,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -38971,7 +38985,7 @@ function Admin() {
                                 children: "Profession"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 123,
+                                lineNumber: 140,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -38979,7 +38993,7 @@ function Admin() {
                                 children: "Admission"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 124,
+                                lineNumber: 141,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -38987,7 +39001,7 @@ function Admin() {
                                 children: "Date"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 125,
+                                lineNumber: 142,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -38995,13 +39009,13 @@ function Admin() {
                                 children: "FromDateToDate"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 126,
+                                lineNumber: 143,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 120,
+                        lineNumber: 137,
                         columnNumber: 17
                     }, this),
                     type === "FromDateToDate" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39010,7 +39024,7 @@ function Admin() {
                                 children: "From : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 130,
+                                lineNumber: 147,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39018,14 +39032,14 @@ function Admin() {
                                 onChange: (e)=>setDate(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 131,
+                                lineNumber: 148,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: " To : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 132,
+                                lineNumber: 149,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39033,7 +39047,7 @@ function Admin() {
                                 onChange: (e)=>setDate2(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 133,
+                                lineNumber: 150,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39041,13 +39055,13 @@ function Admin() {
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 134,
+                                lineNumber: 151,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 129,
+                        lineNumber: 146,
                         columnNumber: 21
                     }, this) : type === "Date" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
@@ -39055,7 +39069,7 @@ function Admin() {
                                 children: "From : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 137,
+                                lineNumber: 154,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39063,7 +39077,7 @@ function Admin() {
                                 onChange: (e)=>setDate(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 138,
+                                lineNumber: 155,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39071,19 +39085,19 @@ function Admin() {
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 139,
+                                lineNumber: 156,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 136,
+                        lineNumber: 153,
                         columnNumber: 41
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 118,
+                lineNumber: 135,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39091,7 +39105,7 @@ function Admin() {
                 children: "Logout"
             }, void 0, false, {
                 fileName: "Components/Admin.js",
-                lineNumber: 143,
+                lineNumber: 160,
                 columnNumber: 13
             }, this),
             data ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -39103,102 +39117,102 @@ function Admin() {
                                     children: "S.No"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 147,
+                                    lineNumber: 164,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 148,
+                                    lineNumber: 165,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Fathers Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 149,
+                                    lineNumber: 166,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "D.O.B"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 150,
+                                    lineNumber: 167,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 151,
+                                    lineNumber: 168,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Contact No."
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 152,
+                                    lineNumber: 169,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Address"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 153,
+                                    lineNumber: 170,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Course"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 154,
+                                    lineNumber: 171,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Profession"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 155,
+                                    lineNumber: 172,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "School Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 156,
+                                    lineNumber: 173,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Employee Company"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 157,
+                                    lineNumber: 174,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Created"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 158,
+                                    lineNumber: 175,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Admission"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 159,
+                                    lineNumber: 176,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "Components/Admin.js",
-                            lineNumber: 146,
+                            lineNumber: 163,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 145,
+                        lineNumber: 162,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -39208,91 +39222,91 @@ function Admin() {
                                         children: index + 1
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 165,
+                                        lineNumber: 182,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Name
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 166,
+                                        lineNumber: 183,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.FatherName
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 167,
+                                        lineNumber: 184,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.DOB
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 168,
+                                        lineNumber: 185,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Email
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 169,
+                                        lineNumber: 186,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.PhoneNo
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 170,
+                                        lineNumber: 187,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Address
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 171,
+                                        lineNumber: 188,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Course
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 172,
+                                        lineNumber: 189,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Profession
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 173,
+                                        lineNumber: 190,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.SchoolName
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 174,
+                                        lineNumber: 191,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.EmployeeCompany
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 175,
+                                        lineNumber: 192,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: `${value.Created.slice(6, 8)}-${value.Created.slice(4, 6)}-${value.Created.slice(0, 4)}`
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 176,
+                                        lineNumber: 193,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Admission
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 177,
+                                        lineNumber: 194,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -39301,29 +39315,29 @@ function Admin() {
                                             children: "Update"
                                         }, void 0, false, {
                                             fileName: "Components/Admin.js",
-                                            lineNumber: 178,
+                                            lineNumber: 195,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 178,
+                                        lineNumber: 195,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 164,
+                                lineNumber: 181,
                                 columnNumber: 25
                             }, this))
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 162,
+                        lineNumber: 179,
                         columnNumber: 18
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 144,
+                lineNumber: 161,
                 columnNumber: 21
             }, this) : null,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39335,7 +39349,7 @@ function Admin() {
                         children: "Admission"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 185,
+                        lineNumber: 202,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39343,7 +39357,7 @@ function Admin() {
                         children: "True"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 186,
+                        lineNumber: 203,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39351,26 +39365,26 @@ function Admin() {
                         children: "False"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 187,
+                        lineNumber: 204,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 184,
+                lineNumber: 201,
                 columnNumber: 13
             }, this),
             err && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: err
             }, void 0, false, {
                 fileName: "Components/Admin.js",
-                lineNumber: 189,
+                lineNumber: 206,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "Components/Admin.js",
-        lineNumber: 117,
+        lineNumber: 134,
         columnNumber: 9
     }, this);
 }
@@ -39389,7 +39403,61 @@ $RefreshReg$(_c, "Admin");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lweQ9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","jwt-decode":"EeAxo"}],"EeAxo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "InvalidTokenError", ()=>InvalidTokenError);
+parcelHelpers.export(exports, "jwtDecode", ()=>jwtDecode);
+class InvalidTokenError extends Error {
+}
+InvalidTokenError.prototype.name = "InvalidTokenError";
+function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str).replace(/(.)/g, (m, p)=>{
+        let code = p.charCodeAt(0).toString(16).toUpperCase();
+        if (code.length < 2) code = "0" + code;
+        return "%" + code;
+    }));
+}
+function base64UrlDecode(str) {
+    let output = str.replace(/-/g, "+").replace(/_/g, "/");
+    switch(output.length % 4){
+        case 0:
+            break;
+        case 2:
+            output += "==";
+            break;
+        case 3:
+            output += "=";
+            break;
+        default:
+            throw new Error("base64 string is not of the correct length");
+    }
+    try {
+        return b64DecodeUnicode(output);
+    } catch (err) {
+        return atob(output);
+    }
+}
+function jwtDecode(token, options) {
+    if (typeof token !== "string") throw new InvalidTokenError("Invalid token specified: must be a string");
+    options || (options = {});
+    const pos = options.header === true ? 0 : 1;
+    const part = token.split(".")[pos];
+    if (typeof part !== "string") throw new InvalidTokenError(`Invalid token specified: missing part #${pos + 1}`);
+    let decoded;
+    try {
+        decoded = base64UrlDecode(part);
+    } catch (e) {
+        throw new InvalidTokenError(`Invalid token specified: invalid base64 for part #${pos + 1} (${e.message})`);
+    }
+    try {
+        return JSON.parse(decoded);
+    } catch (e) {
+        throw new InvalidTokenError(`Invalid token specified: invalid json for part #${pos + 1} (${e.message})`);
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lweQ9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2d98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

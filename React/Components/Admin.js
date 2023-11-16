@@ -1,8 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { jwtDecode } from "jwt-decode";
 
 function Admin() {
     const navigate = useNavigate()
+    if (isTokenExpired()) {
+        // Clear the token from local storage
+        localStorage.removeItem('token');
+        localStorage.removeItem('admin')
+        // Redirect to the login page
+        window.location.href = '/adminlogin'; // You might use React Router's history.push() for navigation
+      }
+      
+      function isTokenExpired() {
+        const token = localStorage.getItem('token');
+        if (!token) return true; // Token not found
+        const decoded = jwtDecode(token); // Function to decode the token
+        const currentTime = Date.now() / 1000; // Get current time in seconds
+        return decoded.exp < currentTime; // Check if token expiration time is in the past
+      }
+
     const [data, setData] = useState('')
     const [type, setType] = useState('Name')
     const [value, setValue] = useState('')

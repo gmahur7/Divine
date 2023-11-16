@@ -20,6 +20,7 @@ const Signup = () => {
     const [emailErr, setEmailErr] = useState(false)
     const [mobErr, setMobErr] = useState(false)
     const [msg, setMsg] = useState(false)
+
     async function submit() {
         setMob(mob.toString())
         if (!name || !email || !fname || !dob || !mob || !add||!course||!profession||!schoolName||!employeeCompany) setError(true)
@@ -42,7 +43,6 @@ const Signup = () => {
                     },4000)
                     setMsg(true)
                 }
-                console.log(await result)
             }
             else{
                 setMobErr(true)

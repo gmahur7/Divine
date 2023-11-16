@@ -4,8 +4,7 @@
   "description": "Divine Form Backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gaurav Singh",
   "license": "ISC",
