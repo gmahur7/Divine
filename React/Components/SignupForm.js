@@ -56,8 +56,8 @@ const Signup = () => {
   }
 
   function reset() {
-    document.getElementById('courses').value=""
-    document.getElementById('profession').value=""
+    document.getElementById('courses').value = ""
+    document.getElementById('profession').value = ""
     setAdd('')
     setName('')
     setFname('')
@@ -88,7 +88,9 @@ const Signup = () => {
       <div className="overlay"></div>
       <div className="signup-container" id='signup'>
         <div className="signup-header">
-          <button className='back-button' onClick={() => navigate('/')}>{'back'}</button>
+          <button className='back-button' onClick={() => navigate('/')}>
+            &lArr;
+          </button>
           <h1 className='signup-heading'>Sign up</h1>
         </div>
         <div className='form-group'>
@@ -99,7 +101,7 @@ const Signup = () => {
         <div className='form-group'>
           <input placeholder=" " className='form-control' value={fname} onChange={(e) => setFname(e.target.value)} type='text' />
           <label>Enter Father's Name</label>
-          {error && !fname && <p className='error'>Please Father's Name</p>}
+          {error && !fname && <p className='error'>Please Enter Father's Name</p>}
         </div>
         <div className='form-group'>
           <input placeholder=' ' className='form-control' value={dob} onChange={(e) => setDob(e.target.value)} type='date' />
@@ -123,7 +125,7 @@ const Signup = () => {
           {error && !add && <p className='error'>Please Enter  Address</p>}
         </div>
         <div className='form-group'>
-          <select id='courses' className='form-control' onChange={(e) => setCourse(e.target.value)}>
+          <select id='courses' className='form-control dropdown-form-control' onChange={(e) => setCourse(e.target.value)}>
             <option value={''}>Courses</option>
             <option value={'Fullstack Web Developement'}>Fullstack Web Developement</option>
             <option value={'Frontend Web Developement'}>Frontend Web Developement</option>
@@ -133,7 +135,7 @@ const Signup = () => {
           {error && !course && <p className='error'>Please Select Course</p>}
         </div>
         <div>
-          <select id='profession' className='form-control' onChange={(e) => setprofession(e.target.value)}>
+          <select id='profession' className='form-control dropdown-form-control' onChange={(e) => setprofession(e.target.value)}>
             <option value=''>Are You a</option>
             <option value="Student">Student</option>
             <option value="Employee">Employee</option>

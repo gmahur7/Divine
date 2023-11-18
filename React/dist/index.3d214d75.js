@@ -33579,7 +33579,7 @@ const Signup = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "back-button",
                                 onClick: ()=>navigate("/"),
-                                children: "back"
+                                children: "\u21D0"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
                                 lineNumber: 91,
@@ -33590,7 +33590,7 @@ const Signup = ()=>{
                                 children: "Sign up"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 92,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -33610,14 +33610,14 @@ const Signup = ()=>{
                                 type: "text"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 95,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 children: "Enter Name"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 96,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, undefined),
                             error && !name && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33625,13 +33625,13 @@ const Signup = ()=>{
                                 children: "Please Enter Name"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 97,
+                                lineNumber: 99,
                                 columnNumber: 30
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 94,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33645,28 +33645,28 @@ const Signup = ()=>{
                                 type: "text"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 100,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 children: "Enter Father's Name"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 101,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, undefined),
                             error && !fname && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: "error",
-                                children: "Please Father's Name"
+                                children: "Please Enter Father's Name"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 102,
+                                lineNumber: 104,
                                 columnNumber: 31
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 99,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33680,7 +33680,7 @@ const Signup = ()=>{
                                 type: "date"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 105,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, undefined),
                             error && !dob && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33688,13 +33688,13 @@ const Signup = ()=>{
                                 children: "Please Enter Date Of Birth "
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 106,
+                                lineNumber: 108,
                                 columnNumber: 29
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 104,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33708,14 +33708,14 @@ const Signup = ()=>{
                                 type: "email"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 109,
+                                lineNumber: 111,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 children: "Enter Email"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 110,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, undefined),
                             error && !email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33723,7 +33723,7 @@ const Signup = ()=>{
                                 children: "Please Enter Email"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 111,
+                                lineNumber: 113,
                                 columnNumber: 31
                             }, undefined),
                             emailErr && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33731,13 +33731,13 @@ const Signup = ()=>{
                                 children: "Please Enter Valid Email"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 112,
+                                lineNumber: 114,
                                 columnNumber: 24
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 108,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33751,14 +33751,14 @@ const Signup = ()=>{
                                 type: "number"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 115,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 children: "Enter Contact No."
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 116,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, undefined),
                             error && !mob && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33766,7 +33766,7 @@ const Signup = ()=>{
                                 children: "Please Enter Contact No."
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 117,
+                                lineNumber: 119,
                                 columnNumber: 29
                             }, undefined),
                             mobErr && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33774,13 +33774,13 @@ const Signup = ()=>{
                                 children: "Enter 10 Digit Contact No."
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 118,
+                                lineNumber: 120,
                                 columnNumber: 22
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 114,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33794,14 +33794,14 @@ const Signup = ()=>{
                                 type: "text"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 121,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 children: "Enter Address"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 122,
+                                lineNumber: 124,
                                 columnNumber: 11
                             }, undefined),
                             error && !add && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33809,13 +33809,13 @@ const Signup = ()=>{
                                 children: "Please Enter  Address"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 123,
+                                lineNumber: 125,
                                 columnNumber: 29
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 120,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33823,7 +33823,7 @@ const Signup = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
                                 id: "courses",
-                                className: "form-control",
+                                className: "form-control dropdown-form-control",
                                 onChange: (e)=>setCourse(e.target.value),
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33831,7 +33831,7 @@ const Signup = ()=>{
                                         children: "Courses"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 127,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33839,7 +33839,7 @@ const Signup = ()=>{
                                         children: "Fullstack Web Developement"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 128,
+                                        lineNumber: 130,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33847,7 +33847,7 @@ const Signup = ()=>{
                                         children: "Frontend Web Developement"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 129,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33855,7 +33855,7 @@ const Signup = ()=>{
                                         children: "Backend Web Developement"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 130,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33863,13 +33863,13 @@ const Signup = ()=>{
                                         children: "Cloud Engineering"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 131,
+                                        lineNumber: 133,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 126,
+                                lineNumber: 128,
                                 columnNumber: 11
                             }, undefined),
                             error && !course && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33877,20 +33877,20 @@ const Signup = ()=>{
                                 children: "Please Select Course"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 133,
+                                lineNumber: 135,
                                 columnNumber: 32
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 125,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
                                 id: "profession",
-                                className: "form-control",
+                                className: "form-control dropdown-form-control",
                                 onChange: (e)=>setprofession(e.target.value),
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33898,7 +33898,7 @@ const Signup = ()=>{
                                         children: "Are You a"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 137,
+                                        lineNumber: 139,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33906,7 +33906,7 @@ const Signup = ()=>{
                                         children: "Student"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 138,
+                                        lineNumber: 140,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -33914,13 +33914,13 @@ const Signup = ()=>{
                                         children: "Employee"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 139,
+                                        lineNumber: 141,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 136,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, undefined),
                             error && !profession && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33928,7 +33928,7 @@ const Signup = ()=>{
                                 children: "Please Select Profession"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 141,
+                                lineNumber: 143,
                                 columnNumber: 36
                             }, undefined),
                             profession === "Student" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33942,14 +33942,14 @@ const Signup = ()=>{
                                         onChange: (e)=>setSchoolName(e.target.value)
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 144,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                         children: "Enter School/College Name"
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 145,
+                                        lineNumber: 147,
                                         columnNumber: 15
                                     }, undefined),
                                     error && !schoolName && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33957,13 +33957,13 @@ const Signup = ()=>{
                                         children: "Please Provide School/College Name "
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 146,
+                                        lineNumber: 148,
                                         columnNumber: 40
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 143,
+                                lineNumber: 145,
                                 columnNumber: 13
                             }, undefined) : profession === "Employee" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "form-group",
@@ -33976,14 +33976,14 @@ const Signup = ()=>{
                                         onChange: (e)=>setEmployeeCompany(e.target.value)
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 150,
+                                        lineNumber: 152,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                         children: "Enter Working Company Name "
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 151,
+                                        lineNumber: 153,
                                         columnNumber: 17
                                     }, undefined),
                                     error && !employeeCompany && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33991,19 +33991,19 @@ const Signup = ()=>{
                                         children: "Please Provide Employee Company "
                                     }, void 0, false, {
                                         fileName: "Components/SignupForm.js",
-                                        lineNumber: 152,
+                                        lineNumber: 154,
                                         columnNumber: 47
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 149,
+                                lineNumber: 151,
                                 columnNumber: 15
                             }, undefined) : null
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 135,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34014,7 +34014,7 @@ const Signup = ()=>{
                                 children: "Submit"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 158,
+                                lineNumber: 160,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34023,13 +34023,13 @@ const Signup = ()=>{
                                 children: "Reset"
                             }, void 0, false, {
                                 fileName: "Components/SignupForm.js",
-                                lineNumber: 159,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 157,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34037,12 +34037,12 @@ const Signup = ()=>{
                             children: "You Are Successfully Signup"
                         }, void 0, false, {
                             fileName: "Components/SignupForm.js",
-                            lineNumber: 162,
+                            lineNumber: 164,
                             columnNumber: 19
                         }, undefined)
                     }, void 0, false, {
                         fileName: "Components/SignupForm.js",
-                        lineNumber: 161,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -38572,13 +38572,14 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 function Home() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-wrapper",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "background-img"
             }, void 0, false, {
                 fileName: "Components/Home.js",
                 lineNumber: 7,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "overlay"
@@ -38592,50 +38593,49 @@ function Home() {
                 id: "home",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Home"
+                        className: "home-heading",
+                        children: "Divine"
                     }, void 0, false, {
                         fileName: "Components/Home.js",
                         lineNumber: 10,
-                        columnNumber: 13
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "link-wrap",
+                        className: "home-btn-wrapper",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/adminlogin",
-                                className: "admin-link",
                                 children: "Admin Login"
                             }, void 0, false, {
                                 fileName: "Components/Home.js",
                                 lineNumber: 12,
-                                columnNumber: 17
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/signup",
-                                className: "admin-link",
-                                children: "User SignUp"
+                                children: "Registration"
                             }, void 0, false, {
                                 fileName: "Components/Home.js",
                                 lineNumber: 13,
-                                columnNumber: 17
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Home.js",
                         lineNumber: 11,
-                        columnNumber: 13
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/Home.js",
                 lineNumber: 9,
-                columnNumber: 9
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "Components/Home.js",
         lineNumber: 6,
-        columnNumber: 9
+        columnNumber: 5
     }, this);
 }
 _c = Home;
@@ -38696,177 +38696,161 @@ function AdminLogin() {
         if (admin) navigate("/admin");
     });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-wrapper",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "background-img"
             }, void 0, false, {
                 fileName: "Components/AdminLogin.js",
-                lineNumber: 39,
-                columnNumber: 9
+                lineNumber: 38,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "overlay"
             }, void 0, false, {
                 fileName: "Components/AdminLogin.js",
-                lineNumber: 40,
-                columnNumber: 9
+                lineNumber: 39,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "signup-container",
                 id: "adminlogin",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "addmin-button",
-                            onClick: ()=>navigate("/"),
-                            children: "back"
-                        }, void 0, false, {
-                            fileName: "Components/AdminLogin.js",
-                            lineNumber: 43,
-                            columnNumber: 19
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "Components/AdminLogin.js",
-                        lineNumber: 42,
-                        columnNumber: 15
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "signup-heading",
-                        children: "Admin Login"
-                    }, void 0, false, {
-                        fileName: "Components/AdminLogin.js",
-                        lineNumber: 45,
-                        columnNumber: 15
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "signup-header admin-signup-header",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "form-group",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        placeholder: " ",
-                                        className: "form-control",
-                                        type: "text",
-                                        value: id,
-                                        onChange: (e)=>setId(e.target.value)
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 48,
-                                        columnNumber: 23
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                        children: "Enter Id"
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 49,
-                                        columnNumber: 23
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: error && !id && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "error",
-                                            children: "Please Provide Admins Id"
-                                        }, void 0, false, {
-                                            fileName: "Components/AdminLogin.js",
-                                            lineNumber: 51,
-                                            columnNumber: 44
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 50,
-                                        columnNumber: 23
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "Components/AdminLogin.js",
-                                lineNumber: 47,
-                                columnNumber: 19
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "form-group",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        placeholder: " ",
-                                        className: "form-control",
-                                        type: "password",
-                                        value: password,
-                                        onChange: (e)=>setPassword(e.target.value)
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 55,
-                                        columnNumber: 23
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                        children: "Enter Password"
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 56,
-                                        columnNumber: 23
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: error && !password && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "error",
-                                            children: "Please Provide Admins Password"
-                                        }, void 0, false, {
-                                            fileName: "Components/AdminLogin.js",
-                                            lineNumber: 58,
-                                            columnNumber: 50
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "Components/AdminLogin.js",
-                                        lineNumber: 57,
-                                        columnNumber: 23
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "Components/AdminLogin.js",
-                                lineNumber: 54,
-                                columnNumber: 19
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "addmin-button",
-                                    onClick: login,
-                                    children: "Login"
-                                }, void 0, false, {
-                                    fileName: "Components/AdminLogin.js",
-                                    lineNumber: 62,
-                                    columnNumber: 23
-                                }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "back-button",
+                                onClick: ()=>navigate("/"),
+                                children: "\u21D0"
                             }, void 0, false, {
                                 fileName: "Components/AdminLogin.js",
-                                lineNumber: 61,
-                                columnNumber: 19
+                                lineNumber: 42,
+                                columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: loginFailed && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    children: "Admin Not found"
-                                }, void 0, false, {
-                                    fileName: "Components/AdminLogin.js",
-                                    lineNumber: 65,
-                                    columnNumber: 39
-                                }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "signup-heading",
+                                children: "Admin Login"
                             }, void 0, false, {
                                 fileName: "Components/AdminLogin.js",
-                                lineNumber: 64,
-                                columnNumber: 19
+                                lineNumber: 48,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/AdminLogin.js",
-                        lineNumber: 46,
-                        columnNumber: 15
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                placeholder: " ",
+                                className: "form-control",
+                                type: "text",
+                                value: id,
+                                onChange: (e)=>setId(e.target.value)
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 51,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                children: "Enter Id"
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, this),
+                            error && !id && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "error",
+                                children: "Please Enter Admin Id"
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 53,
+                                columnNumber: 28
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "Components/AdminLogin.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                placeholder: " ",
+                                className: "form-control",
+                                type: "password",
+                                value: password,
+                                onChange: (e)=>setPassword(e.target.value)
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                children: "Enter Password"
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, this),
+                            error && !password && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "error",
+                                children: "Please Enter Password"
+                            }, void 0, false, {
+                                fileName: "Components/AdminLogin.js",
+                                lineNumber: 58,
+                                columnNumber: 34
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "Components/AdminLogin.js",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "signup-button",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: login,
+                            children: "Login"
+                        }, void 0, false, {
+                            fileName: "Components/AdminLogin.js",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "Components/AdminLogin.js",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: loginFailed && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            children: "Admin Not found"
+                        }, void 0, false, {
+                            fileName: "Components/AdminLogin.js",
+                            lineNumber: 64,
+                            columnNumber: 27
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "Components/AdminLogin.js",
+                        lineNumber: 63,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/AdminLogin.js",
-                lineNumber: 41,
-                columnNumber: 11
+                lineNumber: 40,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "Components/AdminLogin.js",
-        lineNumber: 38,
-        columnNumber: 9
+        lineNumber: 37,
+        columnNumber: 5
     }, this);
 }
 _s(AdminLogin, "6+2tSZhfCz8r9IdJexJ1jw7FUno=", false, function() {
@@ -39040,6 +39024,45 @@ function Admin() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "table-header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "table-header-logo",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            children: "Divine"
+                        }, void 0, false, {
+                            fileName: "Components/Admin.js",
+                            lineNumber: 140,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "Components/Admin.js",
+                        lineNumber: 139,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "table-logout-btn",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: logout,
+                            children: "Logout"
+                        }, void 0, false, {
+                            fileName: "Components/Admin.js",
+                            lineNumber: 143,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "Components/Admin.js",
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "Components/Admin.js",
+                lineNumber: 138,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "table-second-header",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
@@ -39048,8 +39071,8 @@ function Admin() {
                         placeholder: `Search By ${type}`
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 136,
-                        columnNumber: 17
+                        lineNumber: 148,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
                         onChange: typeHandler,
@@ -39059,54 +39082,54 @@ function Admin() {
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 138,
-                                columnNumber: 21
+                                lineNumber: 150,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                 value: "Course",
                                 children: "Course"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 139,
-                                columnNumber: 21
+                                lineNumber: 151,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                 value: "Profession",
                                 children: "Profession"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 140,
-                                columnNumber: 21
+                                lineNumber: 152,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                 value: "Admission",
                                 children: "Admission"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 141,
-                                columnNumber: 21
+                                lineNumber: 153,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                 value: "Date",
                                 children: "Date"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 142,
-                                columnNumber: 21
+                                lineNumber: 154,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                 value: "FromDateToDate",
                                 children: "FromDateToDate"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 143,
-                                columnNumber: 21
+                                lineNumber: 155,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 137,
-                        columnNumber: 17
+                        lineNumber: 149,
+                        columnNumber: 9
                     }, this),
                     type === "FromDateToDate" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
@@ -39114,89 +39137,81 @@ function Admin() {
                                 children: "From : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 147,
-                                columnNumber: 25
+                                lineNumber: 159,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "date",
                                 onChange: (e)=>setDate(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 148,
-                                columnNumber: 25
+                                lineNumber: 160,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: " To : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 149,
-                                columnNumber: 25
+                                lineNumber: 161,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "date",
                                 onChange: (e)=>setDate2(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 150,
-                                columnNumber: 25
+                                lineNumber: 162,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: filter2,
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 151,
-                                columnNumber: 25
+                                lineNumber: 163,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 146,
-                        columnNumber: 21
+                        lineNumber: 158,
+                        columnNumber: 11
                     }, this) : type === "Date" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "From : "
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 154,
-                                columnNumber: 25
+                                lineNumber: 166,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "date",
                                 onChange: (e)=>setDate(e.target.value)
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 155,
-                                columnNumber: 25
+                                lineNumber: 167,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: filter2,
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 156,
-                                columnNumber: 25
+                                lineNumber: 168,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 153,
-                        columnNumber: 41
+                        lineNumber: 165,
+                        columnNumber: 31
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 135,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: logout,
-                children: "Logout"
-            }, void 0, false, {
-                fileName: "Components/Admin.js",
-                lineNumber: 160,
-                columnNumber: 13
+                lineNumber: 147,
+                columnNumber: 7
             }, this),
             data ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
                 children: [
@@ -39207,103 +39222,103 @@ function Admin() {
                                     children: "S.No"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 164,
-                                    columnNumber: 25
+                                    lineNumber: 176,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 165,
-                                    columnNumber: 25
+                                    lineNumber: 177,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Fathers Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 166,
-                                    columnNumber: 25
+                                    lineNumber: 178,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "D.O.B"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 167,
-                                    columnNumber: 25
+                                    lineNumber: 179,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 168,
-                                    columnNumber: 25
+                                    lineNumber: 180,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Contact No."
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 169,
-                                    columnNumber: 25
+                                    lineNumber: 181,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Address"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 170,
-                                    columnNumber: 25
+                                    lineNumber: 182,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Course"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 171,
-                                    columnNumber: 25
+                                    lineNumber: 183,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Profession"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 172,
-                                    columnNumber: 25
+                                    lineNumber: 184,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "School Name"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 173,
-                                    columnNumber: 25
+                                    lineNumber: 185,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Employee Company"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 174,
-                                    columnNumber: 25
+                                    lineNumber: 186,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Created"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 175,
-                                    columnNumber: 25
+                                    lineNumber: 187,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Admission"
                                 }, void 0, false, {
                                     fileName: "Components/Admin.js",
-                                    lineNumber: 176,
-                                    columnNumber: 25
+                                    lineNumber: 188,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "Components/Admin.js",
-                            lineNumber: 163,
-                            columnNumber: 21
+                            lineNumber: 175,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 162,
-                        columnNumber: 17
+                        lineNumber: 174,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: data.map((value, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
@@ -39312,92 +39327,92 @@ function Admin() {
                                         children: index + 1
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 182,
-                                        columnNumber: 29
+                                        lineNumber: 194,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Name
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 183,
-                                        columnNumber: 29
+                                        lineNumber: 195,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.FatherName
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 184,
-                                        columnNumber: 29
+                                        lineNumber: 196,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.DOB
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 185,
-                                        columnNumber: 29
+                                        lineNumber: 197,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Email
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 186,
-                                        columnNumber: 29
+                                        lineNumber: 198,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.PhoneNo
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 187,
-                                        columnNumber: 29
+                                        lineNumber: 199,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Address
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 188,
-                                        columnNumber: 29
+                                        lineNumber: 200,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Course
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 189,
-                                        columnNumber: 29
+                                        lineNumber: 201,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Profession
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 190,
-                                        columnNumber: 29
+                                        lineNumber: 202,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.SchoolName
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 191,
-                                        columnNumber: 29
+                                        lineNumber: 203,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.EmployeeCompany
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 192,
-                                        columnNumber: 29
+                                        lineNumber: 204,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: `${value.Created.slice(6, 8)}-${value.Created.slice(4, 6)}-${value.Created.slice(0, 4)}`
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 193,
-                                        columnNumber: 29
+                                        lineNumber: 205,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: value.Admission
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 194,
-                                        columnNumber: 29
+                                        lineNumber: 206,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39405,30 +39420,30 @@ function Admin() {
                                             children: "Update"
                                         }, void 0, false, {
                                             fileName: "Components/Admin.js",
-                                            lineNumber: 195,
-                                            columnNumber: 33
+                                            lineNumber: 207,
+                                            columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "Components/Admin.js",
-                                        lineNumber: 195,
-                                        columnNumber: 29
+                                        lineNumber: 207,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "Components/Admin.js",
-                                lineNumber: 181,
-                                columnNumber: 25
+                                lineNumber: 193,
+                                columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 179,
-                        columnNumber: 18
+                        lineNumber: 191,
+                        columnNumber: 10
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 161,
-                columnNumber: 21
+                lineNumber: 173,
+                columnNumber: 15
             }, this) : null,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
@@ -39439,43 +39454,43 @@ function Admin() {
                         children: "Admission"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 202,
-                        columnNumber: 17
+                        lineNumber: 214,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>update(id, "true"),
                         children: "True"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 203,
-                        columnNumber: 17
+                        lineNumber: 215,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>update(id, "false"),
                         children: "False"
                     }, void 0, false, {
                         fileName: "Components/Admin.js",
-                        lineNumber: 204,
-                        columnNumber: 17
+                        lineNumber: 216,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Components/Admin.js",
-                lineNumber: 201,
-                columnNumber: 13
+                lineNumber: 213,
+                columnNumber: 7
             }, this),
             err && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: err
             }, void 0, false, {
                 fileName: "Components/Admin.js",
-                lineNumber: 206,
-                columnNumber: 21
+                lineNumber: 218,
+                columnNumber: 15
             }, this)
         ]
     }, void 0, true, {
         fileName: "Components/Admin.js",
-        lineNumber: 134,
-        columnNumber: 9
+        lineNumber: 136,
+        columnNumber: 5
     }, this);
 }
 _s(Admin, "RB7xHGUUP5xHTZcqWW0kfnxplvc=", false, function() {

@@ -6,7 +6,7 @@
 }
 
 .background-img {
-  background-image: url("background.f875afef.webp");
+  background-image: url("background.1f14848b.jpg");
   background-size: cover;
   position: fixed;
   inset: 0;
@@ -16,6 +16,21 @@
   background-color: #0009;
   position: fixed;
   inset: 0;
+}
+
+.signup-heading {
+  margin-left: 92px;
+  font-family: Montserrat, sans-serif;
+}
+
+.home-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.admin-signup-header .signup-heading {
+  margin-left: 58px;
 }
 
 .signup-header {
@@ -62,7 +77,7 @@
   padding: 0 4px;
   font-size: 12px;
   transition: all .3s;
-  top: -9px;
+  top: -7px;
   left: 12px;
 }
 
@@ -71,7 +86,7 @@
   font-size: 15px;
   transition: all .3s;
   position: absolute;
-  top: 11px;
+  top: 14px;
   left: 16px;
 }
 
@@ -81,8 +96,12 @@
   padding: 0 4px;
   font-size: 12px;
   transition: all .3s;
-  top: -9px;
+  top: -7px;
   left: 12px;
+}
+
+.dropdown-form-control {
+  padding: 0 10px;
 }
 
 .signup-button {
@@ -91,7 +110,7 @@
   display: flex;
 }
 
-.signup-button button, .addmin-button {
+.signup-button button {
   color: #fff;
   cursor: pointer;
   background-color: #213858;
@@ -102,23 +121,35 @@
   font-size: 15px;
 }
 
-.link-wrap {
-  justify-content: space-evenly;
-  width: 400px;
+.back-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 28px;
+}
+
+.home-btn-wrapper {
+  justify-content: center;
   display: flex;
 }
 
-.admin-link {
+.home-btn-wrapper a {
   color: #fff;
   cursor: pointer;
   background-color: #213858;
   border: none;
   border-radius: 5px;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 40px;
-  padding-top: 8px;
-  padding-left: 14px;
   font-size: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.home-btn-wrapper a:last-child {
+  margin-left: 20px;
 }
 
 .signup-button .reset-btn {
@@ -135,6 +166,28 @@
   margin-top: -18px;
   margin-bottom: 10px;
   font-size: 12px;
+}
+
+.table-header {
+  background-color: #213858;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+}
+
+.table-header h2 {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+}
+
+.table-second-header {
+  border-bottom: 1px solid gray;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

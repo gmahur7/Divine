@@ -6,7 +6,7 @@
 }
 
 .background-img {
-  background-image: url('/images/background.webp');
+  background-image: url('/images/background.jpg');
   position: fixed;
   top: 0;
   left: 0;
@@ -23,6 +23,21 @@
   right: 0;
   bottom: 0;
 }
+
+.signup-heading {
+  margin-left: 92px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.admin-signup-header .signup-heading {
+  margin-left: 58px;
+} 
 
 .signup-header {
   display: flex;
@@ -66,7 +81,7 @@
 .form-control:focus + label {
   font-size: 12px;
   color: #213858;
-  top: -9px;
+  top: -7px;
   background-color: white;
   padding: 0 4px;
   transition: 0.3s;  
@@ -78,18 +93,22 @@
   font-size: 15px;
   color: #333;
   left: 16px;
-  top: 11px;
+  top: 14px;
   transition: 0.3s;
 }
 
 .form-control:not(:placeholder-shown) + label {
   font-size: 12px;
   color: #213858;
-  top: -9px;
+  top: -7px;
   background-color: white;
   padding: 0 4px;
   transition: 0.3s;  
   left: 12px;
+}
+
+.dropdown-form-control {
+  padding: 0 10px;
 }
 
 .signup-button {
@@ -108,33 +127,36 @@
   font-size: 15px;
   cursor: pointer;
 }
-.addmin-button{
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.home-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-btn-wrapper a {
+  color: #fff;
+  cursor: pointer;
   background-color: #213858;
   border: none;
-  color: white;
-  height: 40px;
-  width: 120px;
   border-radius: 5px;
+  width: 120px;
+  height: 40px;
   font-size: 15px;
-  cursor: pointer;
-}
-.link-wrap{
-  width: 400px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
-.admin-link{
-background-color: #213858;
-color: white;
-border: none;
-  color: white;
-  height: 40px;
-  width: 120px;
-  border-radius: 5px;
-  font-size: 15px;
-  cursor: pointer;
-  padding-top: 8px;
-  padding-left: 14px;
+
+.home-btn-wrapper a:last-child {
+  margin-left: 20px;
 }
 
 .signup-button .reset-btn {
@@ -151,4 +173,25 @@ border: none;
   font-size: 12px;
   margin-top: -18px;
   margin-bottom: 10px;
+}
+
+.table-header {
+  background-color: #213858;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+} 
+.table-header h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.table-second-header {
+  height: 60px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
 }
