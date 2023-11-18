@@ -35,33 +35,37 @@ function AdminLogin() {
         if(admin) navigate('/admin')
     })
     return (
-        <div id='adminlogin'>
-            <div>
-                <button onClick={()=>navigate('/')}>{'<-'}</button>
-            </div>
-            <h1>Admin Login</h1>
-            <div>
-                <div>
-                    <span>Enter Id</span>
-                    <input type='text' value={id} onChange={(e) => setId(e.target.value)} />
-                    <div>
-                        {error && !id && <p>Please Provide Admins Id</p>}
-                    </div>
-                </div>
-                <div>
-                    <span>Enter Password</span>
-                    <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <div>
-                        {error && !password && <p>Please Provide Admins Password</p>}
-                    </div>
-                </div>
-                <div>
-                    <button onClick={login}>Login</button>
-                </div>
-                <div>
-                    {loginFailed && <h3>Admin Not found</h3>}
-                </div>
-            </div>
+        <div>
+        <div className="background-img"></div>
+        <div className="overlay"></div>
+          <div className="signup-container" id='adminlogin'>
+              <div>
+                  <button className='addmin-button' onClick={()=>navigate('/')}>{"back"}</button>
+              </div>
+              <h1 className='signup-heading'>Admin Login</h1>
+              <div>
+                  <div className='form-group'>
+                      <input  placeholder=" " className='form-control'type='text' value={id} onChange={(e) => setId(e.target.value)} />
+                      <label>Enter Id</label>
+                      <div>
+                          {error && !id && <p className='error'>Please Provide Admins Id</p>}
+                      </div>
+                  </div>
+                  <div className='form-group'>
+                      <input  placeholder=" " className='form-control'type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                      <label>Enter Password</label>
+                      <div>
+                          {error && !password && <p className='error'>Please Provide Admins Password</p>}
+                      </div>
+                  </div>
+                  <div>
+                      <button className='addmin-button' onClick={login}>Login</button>
+                  </div>
+                  <div>
+                      {loginFailed && <h3>Admin Not found</h3>}
+                  </div>
+              </div>
+          </div>
         </div>
     )
 }

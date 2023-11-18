@@ -1,6 +1,154 @@
-#signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.background-img {
+  background-image: url('/images/background.webp');
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0,0,0, .6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.signup-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.signup-container {
+  background-color: white;
+  width: 420px;
+  height: 100%;
+  margin: 70px auto ;
+  border-radius: 5px;
+  position: relative;
+  padding: 30px 30px;
+  box-shadow: 0 2px 8px rgba(57,76,96,.15), 0 0 1px rgba(64,87,109,.07);
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  height: 45px;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: white;
+  border-radius: 5px;
+  width: 100%; 
+  padding: 0 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #213858;
+}
+
+.form-control:focus + label {
+  font-size: 12px;
+  color: #213858;
+  top: -9px;
+  background-color: white;
+  padding: 0 4px;
+  transition: 0.3s;  
+  left: 12px;
+}
+
+.form-group label {
+  position: absolute;
+  font-size: 15px;
+  color: #333;
+  left: 16px;
+  top: 11px;
+  transition: 0.3s;
+}
+
+.form-control:not(:placeholder-shown) + label {
+  font-size: 12px;
+  color: #213858;
+  top: -9px;
+  background-color: white;
+  padding: 0 4px;
+  transition: 0.3s;  
+  left: 12px;
+}
+
+.signup-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.signup-button button {
+  background-color: #213858;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.addmin-button{
+  background-color: #213858;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.link-wrap{
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.admin-link{
+background-color: #213858;
+color: white;
+border: none;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-left: 14px;
+}
+
+.signup-button .reset-btn {
+  background-color: #c3c1c1;
+  color: #333;
+}
+
+.signup-button button:last-child {
+  margin-left: 10px;
+}
+
+.error {
+  color: red; 
+  font-size: 12px;
+  margin-top: -18px;
+  margin-bottom: 10px;
 }
