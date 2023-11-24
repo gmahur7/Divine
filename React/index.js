@@ -8,6 +8,7 @@ import Home from './Components/Home'
 import AdminLogin from './Components/AdminLogin'
 import Admin from './Components/Admin'
 import PrivateComp from './Components/PrivateComp'
+import 'font-awesome/css/font-awesome.min.css';
 
 
 function Divine()

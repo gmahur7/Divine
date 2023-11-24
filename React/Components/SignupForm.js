@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Navigate, useNavigate } from 'react-router-dom'
+import { api_url } from '../env';
 
 const Signup = () => {
   const navigate = useNavigate()
@@ -29,7 +30,7 @@ const Signup = () => {
         setEmailErr(true)
       } else {
         if (mob.length == 10) {
-          let result = await fetch('http://localhost/signup', {
+          let result = await fetch(`${api_url}signup`, {
             method: 'post',
             body: JSON.stringify({ Created: date, Name: name, Email: email, FatherName: fname, DOB: dob, PhoneNo: mob, Address: add, Course: course, Profession: profession, SchoolName: schoolName, EmployeeCompany: employeeCompany, }),
             headers: { 'Content-Type': 'application/json' }

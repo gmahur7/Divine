@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express=require('express')
 const cors=require('cors')
 const Jwt = require('jsonwebtoken')
@@ -7,7 +8,8 @@ const Admin =require('./Database/admin')
 const app=express()
 app.use(cors())
 app.use(express.json());
-const jwtKey='arceus'
+const port = process.env.PORT || 8900
+const jwtKey=process.env.JWT_KEY
 
 app.get('/',verifyJwt,async (req,resp)=>
 {
@@ -196,8 +198,8 @@ function verifyJwt(req,resp,next){
    }
 }
 
-app.listen(80,'127.0.0.1',()=>
+app.listen(port,'127.0.0.1',()=>
 {
-    console.log("Server Is Running")
+    console.log("Server Is Running @ ",port)
 })
 

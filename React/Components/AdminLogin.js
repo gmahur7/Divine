@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { api_url } from '../env';
 
 function AdminLogin() {
   const navigate = useNavigate()
@@ -14,7 +15,7 @@ function AdminLogin() {
       setError(true)
     }
     else {
-      let result = await fetch('http://localhost/adminlogin', {
+      let result = await fetch(`${api_url}adminlogin`, {
         method: 'post',
         body: JSON.stringify({ id, password }),
         headers: { 'Content-Type': 'application/json' }
